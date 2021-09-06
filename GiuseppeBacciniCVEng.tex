@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Giuseppe Baccini}\\\medskip % Your name
+	{\Huge\color{headings}\cvtextfont Curriculum Vitae}
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{Jan 2017 -- current} % Duration
+{FT} % FT/PT (full time or part time)
+{List S.p.a} % Employer
+{Senior Software Engineer} % Job title
+{Since 2017 I have been working with market connectivity team. We basically develop gateways for electronic markets. These connectors then, become part of the standard trading platform developed by List. These objects require low latency and extreme reactivity. C/C++ is the election language for this kind of software. Within MC team I mastered a lot of technical skills. I learnt Git, GitLab, CI and CD, Docker and Docker composition; recently I started experimenting with Kubernetes. I also wrote a lot of modern C++. } % Description
+
+%------------------------------------------------
+
+\workposition{Nov 2014 -- Dec 2016} % Duration
+{FT} % FT/PT (full time or part time)
+{List S.p.a} % Employer
+{Software Engineer} % Job title
+{In the following two years I worked for a brand new project for BBVA bank in Spain. This has been an amazing time where I have been frequently sent to Spain in Madrid to work with my teammates that live there. My work consisted of developing a clustered solution for a deal capturing platform. I extensively used C/C++ and Oracle dbms. This has been an unique experience that greatly improved my technical and social skills.} % Description
+
+%------------------------------------------------
+\workposition{Aug 2011 -- Nov 2014} % Duration
+{FT} % FT/PT (full time or part time)
+{List S.p.a} % Employer
+{Software Engineer} % Job title
+{During my second year in List, I was moved to DIAS team that, at time, maintained the credit/debit platform used by the Greek banking system. This allowed me to understand many aspects involving the transfer of money between banks in the Euro zone. I worked with C/C++, Xerces and Oracle. } % Description
+
+%------------------------------------------------
+\workposition{Aug 2010 -- Aug 2011} % Duration
+{FT} % FT/PT (full time or part time)
+{List S.p.a} % Employer
+{Software Engineer} % Job title
+{During my first year in List, I began my transition into the C/C++ world. After few months of boarding I was moved to MHUB team, entirely dedicated to Intesa San Paolo customer. Here I worked on OMS (Order Manager System) core component. This component of List's Fasttrade platform is in charge of management of third party's orders.
+Working on the project allowed me to learn C and little parts of C++. } % Description
+
+%------------------------------------------------
+
+\workposition{Jul 2008 -- Aug 2010} % Duration
+{FT} % FT/PT (full time or part time)
+{RJC Soft S.r.l} % Employer
+{Software Engineer} % Job title
+{This position involved working for Telecom Italia in a series of projects regarding advertising. These projects were Java SE/EE based. I enjoyed working and experimenting with Oracle Coherence, an extremely performing framework used to load a distributed cache across a mesh.}  % Description
+
+%------------------------------------------------
+
+\workposition{Sep 2007 -- Jul 2008} % Duration
+{FT} % FT/PT (full time or part time)
+{Apai S.r.l} % Employer
+{Software Engineer} % Job title
+{During these months I started my experience in the world of work, I was sent to Milan operating for Intesa San Paolo (Bank). My work there consisted in programming with Java SE/EE for an internal audit platform. Technological stack used there was mainly proprietary. } % Description
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & Via Carriona 450/A, Carrara, 54033, Italy \\ % Address
+			\raisebox{-1pt}{\faPhone} & +39 3288143657 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:giuseppe.baccini@live.com}{giuseppe.baccini@live.com} \\ % Email address
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/richter82}{https://github.com/richter82} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/giuseppe-baccini-0288687}{giuseppe-baccini-0288687} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	
+	\educationentry{2001 -- 2006} % Duration
+	{Bachelor of Computer Science} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Department of Computer Science} % Department
+	{The University of Pisa} % Institution
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	\tableentry{Expert}{C, C++, Java}{}
+	\tableentry{}{C++ Standard Template Library}{}	
+	\tableentry{}{Network programming}{}
+	\tableentry{}{Multithread programming}{}
+	\tableentry{}{System programming}{}
+	\tableentry{}{Event driven programming}{}	
+	\tableentry{}{Test driven development}{}	
+	\tableentry{}{S.O.L.I.D, OOP, Design patterns}{}	
+	\tableentry{}{SQL, Relational databases}{}
+	\tableentry{}{Shell, Scripting}{spaceafter}	
+	
+	\tableentry{Intermediate}{Python, Javascript}{}
+    \tableentry{}{Yaml, Json}{}	
+    \tableentry{}{Docker, Git, GitLab, CI}{}
+	\tableentry{}{Visual Studio Code}{spaceafter}
+
+	\tableentry{Beginner}{Kubernetes, CD}{}
+	\tableentry{}{Swift, Go, Rust}{}
+	\tableentry{}{XCode}{spaceafter}		
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	Interest and Activities
+%----------------------------------------------------------------------------------------
+
+\section{Interest and Activities}
+
+\large Programming, History and Philosophy, Open Source, Martial Arts, Videogaming
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+	\textsc{English:} & Very Good\\
+	
+	\textsc{Italian:} & Native Speaker\\
+	
+\end{tabular}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
