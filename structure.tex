@@ -12,7 +12,7 @@
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
@@ -120,6 +120,15 @@ SmallCapsFont=*-SC.ttf
 %----------------------------------------------------------------------------------------
 %	CUSTOM COMMANDS
 %----------------------------------------------------------------------------------------
+
+% Command for entering a new work position
+\newcommand{\workpositionmain}[6]{
+	{\raggedleft\textsc{#1\expandafter\ifstrequal\expandafter{#2}{}{}{\hspace{6pt}\footnotesize{(#2)}}}\par} % Duration and conditional full time/part time text
+	\expandafter\ifstrequal\expandafter{#3}{}{}{{\raggedright\large{\textbf{#3}}}\\[2pt]} % Employer
+        \expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright\large #4}\\} % Employer
+	\expandafter\ifstrequal\expandafter{#5}{}{}{{\raggedright\large\textit{\textbf{#5}}}\\[5pt]} % Job title
+	\expandafter\ifstrequal\expandafter{#6}{}{}{#6\\} % Description
+}
 
 % Command for entering a new work position
 \newcommand{\workposition}[5]{
